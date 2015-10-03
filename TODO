@@ -1,0 +1,18 @@
+- Especificação de destrutores (ou métodos de clean-up), se necessário
+- Organização do código em espaços de nome diferenciados, conforme a função ou estrutura de cada classe
+- Mecanismo de herança, em especial:
+-- especificação de pelo menos três níveis de hierarquia, sendo uma classe mais genérica (e abstrata, ver a seguir)
+-- especificação de pelo menos uma classe abstrata (ou interface) a ser especializada (ou implementada) nas classes filhas
+-- demonstração de polimorfismo por inclusão (variável ou coleção genérica manipulando entidades de classes filhas, chamando métodos ou funções específicas correspondentes)
+- Polimorfismo paramétrico:
+-- especificação de algoritmo (método ou função genérico) utilizando o recurso oferecido pela linguagem (p. ex., generics, templates)
+-- especificação de estrutura de dados genérica utilizando o recurso oferecido pela linguagem (p. ex., generics, templates)
+- Polimorfismo por sobrecarga (vale construtores alternativos)
+- Especificação e uso de funções como elementos de 1ª ordem
+- Especificação e uso de funções de ordem maior (map, reduce, foldr/foldl ou similares)
+- Uso de listas para a manipulação de estruturas, entidades e elementos em funções de ordem maior. As funções devem ser puras, ou seja, devem criar novas listas (e não manipular as que são recebidas)
+- Especificação e uso de funções não nomeadas (ou lambda)
+- Especificação e uso de funções que usem currying
+- Especificação de funções que utilizem pattern matching na sua definição
+- Uso de recursão como mecanismo de iteração (pelo menos em funcções de ordem maior que manipulem listas)
+- Especificação e uso de delegates
