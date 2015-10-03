@@ -13,6 +13,7 @@
 *.exe
 *.out
 
-# IDE files
+# Code::Blocks files
 *.cbp
+*.depend
 *.layout

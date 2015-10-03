@@ -3,8 +3,6 @@
 
 #include "vector3d.h"
 
-
-
 class Point3D
 {
 public:
@@ -28,11 +26,11 @@ public:
 
     //debug purposes
     std::string toString() const;
-    friend std::ostream& operator<<(std::ostream& stream, const Point3D& vec)
-    {
-        stream << vec.toString();
+    friend std::ostream& operator<<(std::ostream& stream, const Point3D& point) {
+        stream << point.toString();
         return stream;
     }
+
 private:
     int x, y, z;
 };

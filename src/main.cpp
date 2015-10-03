@@ -1,14 +1,16 @@
 #include <iostream>
 #include "vector3d.h"
 #include "point3d.h"
+#include "particle.h"
 
 using namespace std;
 
 int main() {
 
-	Point3D p1(1,2,3), p2(1,1,1), p3(-1,0,0);
+	Point3D point1(1,2,3);
+	Particle particle1(point1, 50.5);
 
-	std::cout << p1.toString() << std::endl;
+	cout << particle1 << endl;
 
 	return 0;
 

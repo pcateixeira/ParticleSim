@@ -17,7 +17,7 @@ public:
     double norm();
     static double norm(Vector3D vec);
 
-    Vector3D &scalarProduct(double scalar);
+    Vector3D scalarProduct(double scalar);
     static Vector3D scalarProduct(Vector3D vec, double scalar);
 
     double dotProduct(Vector3D other);
@@ -39,8 +39,7 @@ public:
 
     //debug purposes
     std::string toString() const;
-    friend std::ostream& operator<<(std::ostream& stream, const Vector3D& vec)
-    {
+    friend std::ostream& operator<<(std::ostream& stream, const Vector3D& vec) {
         stream << vec.toString();
         return stream;
     }
