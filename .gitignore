@@ -2,15 +2,10 @@
 *.o
 *.obj
 
-# Compiled Dynamic libraries
-*.dll
-
 # Compiled Static libraries
 *.a
-*.lib
 
 # Executables
-*.exe
 *.out
 
 # Code::Blocks files

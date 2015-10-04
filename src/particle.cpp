@@ -1,6 +1,8 @@
 #include "particle.h"
 
-Particle::Particle()
+Particle::Particle() :
+    position(Point3D(0,0,0)),
+    mass(1)
 {}
 
 Particle::Particle(Point3D _position, double _mass) :

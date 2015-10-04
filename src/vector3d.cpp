@@ -1,7 +1,10 @@
 #include "vector3d.h"
 #include "cmath"
 
-Vector3D::Vector3D()
+Vector3D::Vector3D() :
+    x(1),
+    y(1),
+    z(1)
 {}
 
 Vector3D::Vector3D(double _x, double _y, double _z) :
