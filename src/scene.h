@@ -1,9 +1,9 @@
 #ifndef SCENE_H
 #define SCENE_H
 
-#include <list>
 #include <gl/gl.h>
-#include <GL/glut.h>
+#include <gl/glu.h>
+#include <gl/glut.h>
 #include "particle.h"
 
 class Scene
@@ -11,14 +11,37 @@ class Scene
 public:
     Scene();
 
-    // Metodos usados pela GLUT devem ser configurados como estaticos
-    static void drawScene();
-    static void changeWindowSize(GLsizei w, GLsizei h);
-    static void initialize();
+    void initialize();
+    void orthoViewing();
 
-    bool renderScene();
+    // Metodos usados pela GLUT devem ser descritos como estaticos
+    static void changeSize(GLsizei w, GLsizei h);
+    static void renderScene();
+
+    void drawScene();
+
+    Point3D getCamera() const;
+    void setCamera(Point3D value);
+
+    Point3D getEye() const;
+    void setEye(Point3D value);
+
+    Vector3D getUpVector() const;
+    void setUpVector(Vector3D value);
+
+    int getWindowWidth() const;
+    void setWindowWidth(int value);
+
+    int getWindowHeight() const;
+    void setWindowHeight(int value);
+
 
 private:
+    Point3D camera;
+    Point3D eye;
+    Vector3D upVector;
+    int windowWidth;
+    int windowHeight;
 };
 
 #endif // SCENE_H
